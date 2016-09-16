@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Entities\Plan;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -139,8 +140,8 @@ class HomeController extends Controller
         $person = $usuario->person;
 
         $rules = [
-            'pp1' => 'required|date',
-            'pp2' => 'required|date',
+            'pp1' => 'required|date|after:'.Carbon::yesterday()->format('d-m-Y'),
+            'pp2' => 'required|date|after:'.Carbon::yesterday()->format('d-m-Y'),
         ];
 
         $this->validate($request, $rules);

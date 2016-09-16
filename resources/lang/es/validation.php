@@ -120,7 +120,11 @@ return [
         'especialty_id' => 'Especialidad',
         'topic_id'  => 'Materia o Periodo',
         'topic'  => 'Materia o Periodo',
-        'password'  => 'Contraseña'
+        'password'  => 'Contraseña',
+        'pp1'   => 'Fecha de Inicio de la Prueba',
+        'pp2'   => 'Fecha de Finalización de la Prueba',
+        'now'   => 'hoy',
+        'yesterday' => 'ayer'
     ],
 ];
 
