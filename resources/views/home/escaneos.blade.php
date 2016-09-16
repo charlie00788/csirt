@@ -40,7 +40,9 @@
                                     {!! Form::select('es1', [
                                         'Betrix 24' => 'Betrix 24',
                                         'Advanced IP Scanner' => 'Advanced IP Scanner',
-                                        'Acrilic WiFi' => 'Acrilic WiFi'
+                                        'Acrilic WiFi' => 'Acrilic WiFi',
+                                        'Wireshark' => 'Wireshark',
+                                        'Kali Linux' => 'Kali Linux'
                                     ]) !!}
                                 </p>
                             </div>
