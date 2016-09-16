@@ -39,7 +39,7 @@
                             {!! Form::label('pl1', 'Acceso no autorizado', ['class' => 'col-lg-3 control-label']) !!}
                             <div class="col-lg-9">
                                 <p class="form-control-static">
-                                    {!! Form::select('pl1', ['Si' => 'Si', 'No' => 'No']) !!}
+                                    {!! Form::select('pl1', ['No' => 'No', 'Si' => 'Si']) !!}
                                 </p>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                             {!! Form::label('pl2', 'Código malicisioso', ['class' => 'col-lg-3 control-label']) !!}
                             <div class="col-lg-9">
                                 <p class="form-control-static">
-                                    {!! Form::select('pl2', ['Si' => 'Si', 'No' => 'No']) !!}
+                                    {!! Form::select('pl2', ['No' => 'No', 'Si' => 'Si']) !!}
                                 </p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                             {!! Form::label('pl3', 'Denegación de servicios', ['class' => 'col-lg-3 control-label']) !!}
                             <div class="col-lg-9">
                                 <p class="form-control-static">
-                                    {!! Form::select('pl3', ['Si' => 'Si', 'No' => 'No']) !!}
+                                    {!! Form::select('pl3', ['No' => 'No', 'Si' => 'Si']) !!}
                                 </p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             {!! Form::label('pl4', 'Mal uso de recursos tecnológicos', ['class' => 'col-lg-3 control-label']) !!}
                             <div class="col-lg-9">
                                 <p class="form-control-static">
-                                    {!! Form::select('pl4', ['Si' => 'Si', 'No' => 'No']) !!}
+                                    {!! Form::select('pl4', ['No' => 'No', 'Si' => 'Si']) !!}
                                 </p>
                             </div>
                         </div>
