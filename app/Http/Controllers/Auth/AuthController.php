@@ -133,4 +133,24 @@ class AuthController extends Controller
 
         return redirect()->route('login');
     }
+
+    /**
+     * Get the maximum number of login attempts for delaying further attempts.
+     *
+     * @return int
+     */
+    protected function maxLoginAttempts()
+    {
+        return property_exists($this, 'maxLoginAttempts') ? $this->maxLoginAttempts : 2;
+    }
+
+    /**
+     * The number of seconds to delay further login attempts.
+     *
+     * @return int
+     */
+    protected function lockoutTime()
+    {
+        return property_exists($this, 'lockoutTime') ? $this->lockoutTime : 120;
+    }
 }
