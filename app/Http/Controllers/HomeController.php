@@ -379,4 +379,28 @@ class HomeController extends Controller
 
         return view('home.sugerencias', compact('usuario', 'person', 'planes'));
     }
+
+    public function getMision()
+    {
+        $usuario = Auth::user();
+        $person = $usuario->person;
+
+        return view('home.mision', compact('usuario', 'person'));
+    }
+
+    public function getVision()
+    {
+        $usuario = Auth::user();
+        $person = $usuario->person;
+
+        return view('home.mision', compact('usuario', 'person'));
+    }
+
+    public function getNotificacion()
+    {
+        $usuario = Auth::user();
+        $person = $usuario->person;
+
+        return view('home.notificaiones', compact('usuario', 'person'));
+    }
 }

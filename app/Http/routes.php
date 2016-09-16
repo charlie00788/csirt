@@ -55,6 +55,16 @@ Route::group(['middleware' => 'auth'], function(){
         'as'   => 'home'
     ]);
 
+    Route::get('notificacion', [
+        'uses'  => 'HomeController@getNotificacion',
+        'as'    => 'getNotificacion'
+    ]);
+
+    Route::get('mision', [
+        'uses'  => 'HomeController@getMision',
+        'as'    => 'getMision'
+    ]);
+
     Route::get('planificacion', [
         'uses'  => 'HomeController@getPlanificacion',
         'as'    => 'getPlanificacion'
