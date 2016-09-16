@@ -3,6 +3,6 @@
         Desarrollado por MY. ING. Erick Rolando Palenque Ríos
     </div>
     <div>
-        <strong>Copyright</strong> SeoSoft &copy;2016
+        <strong>Copyright</strong> EMI &copy;2016
     </div>
 </div>
