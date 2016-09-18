@@ -120,63 +120,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a data-toggle="collapse" href="#faq6" class="faq-question">Indicar la direccion IP</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="faq6" class="panel-collapse collapse ">
-                                <div class="faq-answer">
-                                    <p>
-                                        En caso de que aplique indicar la direccion IP desde donde la cual se haran
-                                        las pruebas de forma remota.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a data-toggle="collapse" href="#faq7" class="faq-question">Identificar HW y SW</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="faq7" class="panel-collapse collapse ">
-                                <div class="faq-answer">
-                                    <p>
-                                        Especificar el hardware y software que el equipo de pentester utilizara
-                                        para realizar las pruebas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a data-toggle="collapse" href="#faq8" class="faq-question">Determinar los sistemas y/o redes</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="faq8" class="panel-collapse collapse ">
-                                <div class="faq-answer">
-                                    <p>
-                                        Determinar los sistemas y/o redes que se probara durante todo el proceso
-                                        de pruebas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="faq-item">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<a data-toggle="collapse" href="#faq6" class="faq-question">Indicar la direccion IP</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-12">--}}
+                            {{--<div id="faq6" class="panel-collapse collapse ">--}}
+                                {{--<div class="faq-answer">--}}
+                                    {{--<p>--}}
+                                        {{--En caso de que aplique indicar la direccion IP desde donde la cual se haran--}}
+                                        {{--las pruebas de forma remota.--}}
+                                    {{--</p>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="faq-item">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<a data-toggle="collapse" href="#faq7" class="faq-question">Identificar HW y SW</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-12">--}}
+                            {{--<div id="faq7" class="panel-collapse collapse ">--}}
+                                {{--<div class="faq-answer">--}}
+                                    {{--<p>--}}
+                                        {{--Especificar el hardware y software que el equipo de pentester utilizara--}}
+                                        {{--para realizar las pruebas.--}}
+                                    {{--</p>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="faq-item">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<a data-toggle="collapse" href="#faq8" class="faq-question">Determinar los sistemas y/o redes</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-12">--}}
+                            {{--<div id="faq8" class="panel-collapse collapse ">--}}
+                                {{--<div class="faq-answer">--}}
+                                    {{--<p>--}}
+                                        {{--Determinar los sistemas y/o redes que se probara durante todo el proceso--}}
+                                        {{--de pruebas.--}}
+                                    {{--</p>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <div class="faq-item">
                     <div class="row">
                         <div class="col-md-12">

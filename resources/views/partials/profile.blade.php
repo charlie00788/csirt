@@ -14,7 +14,7 @@
     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
         <span class="clear">
             <span class="block m-t-xs">
-                <strong class="font-bold">{{ $usuario->grade->grade }} {{ $usuario->especialty->especialty }} {{ $person->getNameComplete() }}</strong>
+                <strong class="font-bold">My. Ing. {{ $person->getNameComplete() }}</strong>
             </span>
 
             <span class="text-muted text-xs block">
