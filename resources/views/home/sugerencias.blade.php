@@ -24,13 +24,14 @@
                 </div>
 
                 <div class="ibox-title">
-                    <h2>Sugernecias de Mitigación</h2>
+                    <h2>Sugerencias de Mitigación</h2>
                 </div>
                 <div class="ibox-content">
                     <div class="form-horizontal">
 
                         @include('partials.errors')
 
+                        {!! Form::open(['route' => 'descubrimiento.postVulnerabilidades', 'method' => 'POST']) !!}
                         <div class="form-group">
                             {!! Form::label('vu1', 'Acceso no autorizado', ['class' => 'col-lg-3 control-label']) !!}
                             <div class="col-lg-9">
@@ -84,6 +85,12 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-lg-3">
+                                {!! Form::submit('Guardar Sugerencia de Mitigación', ['class' => 'btn btn-block btn-primary']) !!}
+                            </div>
+                        </div>
+                        {!! Form::close() !!}
                     </div>
                 </div>
 

@@ -328,7 +328,7 @@ class HomeController extends Controller
         $usuario = Auth::user();
         $person = $usuario->person;
 
-        $planes = Plan::all();
+        $planes = Plan::where('id', 'nv1')->first();
 
         return view('home.agregarVulnerabilidad', compact('usuario', 'person', 'planes'));
     }
@@ -344,7 +344,7 @@ class HomeController extends Controller
 
         $this->validate($request, $rules);
 
-        $pl = Plan::findOrFail('nv1')->update(['estado' => $request->nv1]);
+        Plan::findOrFail('nv1')->update(['estado' => $request->nv1]);
 
         Alert::message('Registros actualizados exitósamente', 'success');
 
@@ -371,7 +371,7 @@ class HomeController extends Controller
         return view('home.variables', compact('usuario', 'person', 'planes'));
     }
 
-    public function getSugerencia(Request $request)
+    public function getSugerencia()
     {
         $usuario = Auth::user();
         $person = $usuario->person;
@@ -379,6 +379,16 @@ class HomeController extends Controller
         $planes = Plan::all();
 
         return view('home.sugerencias', compact('usuario', 'person', 'planes'));
+    }
+
+    public function postSugerencia(Request $request)
+    {
+        $usuario = Auth::user();
+        $person = $usuario->person;
+
+        Alert::message('Sugerencia actualizada!', 'success');
+
+        return view('home.reporte', compact('usuario', 'person', 'planes'));
     }
 
     public function getMision()

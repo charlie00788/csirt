@@ -185,6 +185,11 @@ Route::group(['middleware' => 'auth'], function(){
         'as'    => 'reporte.getSugerencia'
     ]);
 
+    Route::post('sugerencias', [
+        'uses'  => 'HomeController@postSugerencia',
+        'as'    => 'reporte.postSugerencia'
+    ]);
+
 
 
 

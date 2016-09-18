@@ -55,7 +55,8 @@
                                         'Violación de políticas de seguridad' => 'Violación de políticas de seguridad',
                                         'Código propenso a ataques de buffer overflows' => 'Código propenso a ataques de buffer overflows',
                                         'Ataques de descriptor de archivos' => 'Ataques de descriptor de archivos',
-                                        'Incorrecta asignacion de permisos a archivos y directorios' => 'Incorrecta asignacion de permisos a archivos y directorios'
+                                        'Incorrecta asignacion de permisos a archivos y directorios' => 'Incorrecta asignacion de permisos a archivos y directorios',
+                                        $planes->estado => $planes->estado
                                     ]) !!}
                                 </p>
                             </div>
