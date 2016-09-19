@@ -143,6 +143,21 @@
                                 </p>
                             </div>
                         </div>
+                        <br><br><br><br>
+                        <div class="form-group">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-2">
+                                <p class="form-control-static">
+                                    SubJefe del CSIRT EMI
+                                </p>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-4">
+                                <p class="form-control-static">
+                                    Jefe del CSIRT EMI
+                                </p>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="col-lg-3">
                                 {!! Form::button('Imprimir Reporte' , ['class' => 'btn btn-block btn-primary']) !!}
