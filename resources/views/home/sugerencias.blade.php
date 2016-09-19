@@ -18,7 +18,7 @@
 
                 <div class="ibox-content m-b-sm border-bottom">
                     <div class="text-center p-lg">
-                        <h2>Reporte</h2>
+                        <h2>Sugerencias de Mitigación</h2>
                         <span>Sugerencias</span>
                     </div>
                 </div>

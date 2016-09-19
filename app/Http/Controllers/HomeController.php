@@ -181,12 +181,12 @@ class HomeController extends Controller
 
         $this->validate($request, $rules);
 
-        $pl = Plan::findOrFail('lp1')->update(['estado' => $request->lp1]);
-        $pl = Plan::findOrFail('lp2')->update(['estado' => $request->lp2]);
-        $pl = Plan::findOrFail('lp3')->update(['estado' => $request->lp3]);
-        $pl = Plan::findOrFail('lp4')->update(['estado' => $request->lp4]);
-        $pl = Plan::findOrFail('lp5')->update(['estado' => $request->lp5]);
-        $pl = Plan::findOrFail('lp6')->update(['estado' => $request->lp6]);
+        Plan::findOrFail('lp1')->update(['estado' => $request->lp1]);
+        Plan::findOrFail('lp2')->update(['estado' => $request->lp2]);
+        Plan::findOrFail('lp3')->update(['estado' => $request->lp3]);
+        Plan::findOrFail('lp4')->update(['estado' => $request->lp4]);
+        Plan::findOrFail('lp5')->update(['estado' => $request->lp5]);
+        Plan::findOrFail('lp6')->update(['estado' => $request->lp6]);
 
         Alert::message('Registros actualizados exitósamente', 'success');
 
@@ -242,7 +242,7 @@ class HomeController extends Controller
 
         $this->validate($request, $rules);
 
-        $pl = Plan::findOrFail('cp1')->update(['estado' => $request->cp1]);
+        Plan::findOrFail('cp1')->update(['estado' => $request->cp1]);
 
         Alert::message('Registros actualizados exitósamente', 'success');
 
@@ -270,7 +270,7 @@ class HomeController extends Controller
 
         $this->validate($request, $rules);
 
-        $pl = Plan::findOrFail('es1')->update(['estado' => $request->es1]);
+        Plan::findOrFail('es1')->update(['estado' => $request->es1]);
 
         Alert::message('Registros actualizados exitósamente', 'success');
 
@@ -306,7 +306,8 @@ class HomeController extends Controller
 
         $this->validate($request, $rules);
 
-        $pl = Plan::findOrFail('vu1')->update(['estado' => $request->vu1]);
+        Plan::findOrFail('vu1')->update(['estado' => $request->vu1]);
+        $po =
 
         Alert::message('Registros actualizados exitósamente', 'success');
 
@@ -367,8 +368,15 @@ class HomeController extends Controller
         $person = $usuario->person;
 
         $planes = Plan::all();
+        $p1 = Plan::find('lp1')->estado;
+        $p2 = Plan::find('lp2')->estado;
+        $p3 = Plan::find('lp3')->estado;
+        $p4 = Plan::find('lp4')->estado;
+        $p5 = Plan::find('lp5')->estado;
+        $p6 = Plan::find('lp6')->estado;
+        $totalPc = $p1 + $p2 + $p3 + $p4 + $p5 + $p6;
 
-        return view('home.variables', compact('usuario', 'person', 'planes'));
+        return view('home.variables', compact('usuario', 'person', 'planes', 'totalPc'));
     }
 
     public function getSugerencia()
