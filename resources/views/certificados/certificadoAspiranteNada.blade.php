@@ -26,9 +26,9 @@
         <div>
             <p align="center" class="h3">
                 <i>
+                    {{ $aspirante->nombres }}
                     {{ $aspirante->paterno }}
                     {{ $aspirante->materno }}
-                    {{ $aspirante->nombres }}
                     &nbsp;&nbsp;&nbsp;
                     C.I. {{ $aspirante->id }} {{ $aspirante->city_id }}
                 </i>
