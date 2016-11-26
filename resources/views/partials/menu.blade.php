@@ -3,6 +3,21 @@
 </li>
 
 <li>
+    <a href="#"><i class="fa fa-file-text-o"></i> <span class="nav-label">Manuales del CSIRT EMI</span></a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a href="{{ url('manuales/man1.pdf') }} " target="_blank">Manual de Administracion CSIRT EMI</a>
+        </li>
+        <li>
+            <a href="{{ url('manuales/man2.pdf') }}" target="_blank">Manual de Contingencias CSIRT EMI</a>
+        </li>
+        <li>
+            <a href="{{ url('manuales/man3.pdf') }}" target="_blank">Manual de Políticas de Seguridad CSRIT EMI</a>
+        </li>
+    </ul>
+</li>
+
+<li>
     <a href="{{ route('getNotificacion') }}"><i class="fa fa-file-text-o"></i> <span class="nav-label">Notificaciones</span></a>
 </li>
 
