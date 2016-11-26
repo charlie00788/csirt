@@ -31,8 +31,6 @@
                 <div class="ibox-content">
                     <div class="form-horizontal">
 
-                        @include('partials.errors')
-
                         {!! Form::open(['route' => 'planificacion.postLugaresPenetracion', 'method' => 'POST']) !!}
 
                         <div class="form-group">
@@ -40,6 +38,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp1', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',
@@ -59,6 +58,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp2', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',
@@ -78,6 +78,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp3', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',
@@ -97,6 +98,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp4', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',
@@ -116,6 +118,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp5', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',
@@ -135,6 +138,7 @@
                             <div class="col-lg-9">
                                 <p class="form-control-static">
                                     {!! Form::select('lp6', [
+                                        '0' => '0',
                                         '1' => '1',
                                         '2' => '2',
                                         '3' => '3',

@@ -190,6 +190,11 @@ Route::group(['middleware' => 'auth'], function(){
         'as'    => 'reporte.postSugerencia'
     ]);
 
+    Route::get('historial', [
+        'uses'  => 'HomeController@getHistorial',
+        'as'    => 'reporte.getHistorial'
+    ]);
+
 
 
 

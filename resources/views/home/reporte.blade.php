@@ -63,6 +63,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="faq-item">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a data-toggle="collapse" href="#faq3" class="faq-question">Historial de Notificaciones</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="faq3" class="panel-collapse collapse ">
+                                <div class="faq-answer">
+                                    <p>
+                                        Historial de Notificaciones. <a href="{{ route('reporte.getHistorial') }}" class="btn btn-success"> Ingresar</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

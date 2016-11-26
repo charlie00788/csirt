@@ -171,12 +171,12 @@ class HomeController extends Controller
         $person = $usuario->person;
 
         $rules = [
-            'lp1' => 'required|numeric|min:1|max:10',
-            'lp2' => 'required|numeric|min:1|max:10',
-            'lp3' => 'required|numeric|min:1|max:10',
-            'lp4' => 'required|numeric|min:1|max:10',
-            'lp5' => 'required|numeric|min:1|max:10',
-            'lp6' => 'required|numeric|min:1|max:10',
+            'lp1' => 'required|numeric|min:0|max:10',
+            'lp2' => 'required|numeric|min:0|max:10',
+            'lp3' => 'required|numeric|min:0|max:10',
+            'lp4' => 'required|numeric|min:0|max:10',
+            'lp5' => 'required|numeric|min:0|max:10',
+            'lp6' => 'required|numeric|min:0|max:10',
         ];
 
         $this->validate($request, $rules);
@@ -421,5 +421,13 @@ class HomeController extends Controller
         $person = $usuario->person;
 
         return view('home.notificaiones', compact('usuario', 'person'));
+    }
+
+    public function getHistorial()
+    {
+        $usuario = Auth::user();
+        $person = $usuario->person;
+
+        return view('home.historial', compact('usuario', 'person'));
     }
 }

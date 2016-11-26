@@ -21,6 +21,20 @@
                 <div class="ibox-content m-b-sm border-bottom">
                     <div class="text-center p-lg">
                         <h2>Reporte del {{ Carbon::now()->format('d/M/Y') }}</h2>
+                        <h3>Riesgo del Tipo:
+                        @if(\App\Entities\Plan::find('pl1')->estado == 'Si')
+                            {{ \App\Entities\Plan::find('pl1')->descripcion }} <br>
+                        @endif
+                        @if(\App\Entities\Plan::find('pl2')->estado == 'Si')
+                            {{ \App\Entities\Plan::find('pl2')->descripcion }} <br>
+                        @endif
+                        @if(\App\Entities\Plan::find('pl3')->estado == 'Si')
+                            {{ \App\Entities\Plan::find('pl3')->descripcion }} <br>
+                        @endif
+                        @if(\App\Entities\Plan::find('pl4')->estado == 'Si')
+                            {{ \App\Entities\Plan::find('pl4')->descripcion }}
+                        @endif
+                        </h3>
                         <span>Variables del Sistema</span>
                     </div>
                 </div>
