@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-lg-3">
-                                {!! Form::submit('Guardar Programación de Pruebas', ['class' => 'btn btn-block btn-primary']) !!}
+                                {!! Form::submit('Guardar Nivel de Acceso', ['class' => 'btn btn-block btn-primary']) !!}
                             </div>
                         </div>
 
